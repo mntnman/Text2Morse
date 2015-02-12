@@ -2,7 +2,7 @@
 
 import sys, traceback
 
-myFile = '/Users/phooper/dev/python/morseCharMap.txt'
+myFile = '/Users/phooper/gitroot/Text2Morse/morseCharMap.txt'
 morseMap = {}
 
 ## Open the map file if we can >:/
@@ -26,12 +26,16 @@ while line:
 
 f.close()
 
-#for x in morseMap.keys():
-	#print "key = %s and value is %s." % (x,morseMap[x])
+for c in sys.stdin:
+	continue
 
-while True:
-	c = sys.stdin.read(1)
-	c = c.rstrip('\n')
-	#print c
-	print morseMap[c]
-	sys.exit(0)
+#for x in morseMap.keys():
+#	print "key = %s and value is %s." % (x,morseMap[x])
+
+c = c.upper()
+c = c.replace(" ", "")
+c = c.rstrip()
+for x in c:
+	print morseMap[x] + " ",
+
+sys.exit(0)
