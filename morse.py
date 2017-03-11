@@ -2,7 +2,7 @@
 
 import sys, traceback
 
-myFile = '/Users/phooper/gitroot/Text2Morse/morseCharMap.txt'
+myFile = 'morseCharMap.txt'
 morseMap = {}
 
 ## Open the map file if we can >:/
