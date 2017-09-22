@@ -42,4 +42,5 @@ while True:
 
 	c = c.upper()
 	sys.stdout.write(morseMap[c])
+	sys.stdout.write(' ' )
 	sys.stdout.flush()
